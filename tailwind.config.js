@@ -21,6 +21,9 @@ module.exports = {
           900: '#0c4a6e',
           950: '#082f49',
         },
+        border: 'hsl(var(--border) / <alpha-value>)',
+        background: 'hsl(var(--background) / <alpha-value>)',
+        foreground: 'hsl(var(--foreground) / <alpha-value>)',
       },
       fontFamily: {
         sans: ['Inter var', 'ui-sans-serif', 'system-ui'],
