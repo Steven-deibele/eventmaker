@@ -1,8 +1,14 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import { NextAuthProvider } from './providers';
+import { AppProviders } from './providers';
 import React from 'react';
+import dynamic from 'next/dynamic';
+
+// Dynamically import AppInitializer to ensure it runs on the client
+const AppInitializer = dynamic(() => import('./components/AppInitializer'), {
+  ssr: false,
+});
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -20,9 +26,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <NextAuthProvider>
-          {children}
-        </NextAuthProvider>
+        <AppProviders>
+          <AppInitializer>
+            {children}
+          </AppInitializer>
+        </AppProviders>
       </body>
     </html>
   );
