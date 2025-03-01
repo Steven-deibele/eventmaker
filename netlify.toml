@@ -11,9 +11,9 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-# Force Netlify to not use cached node_modules for Prisma
+# Cache node_modules/.cache to speed up builds
 [[plugins]]
-  package = "netlify-plugin-cache-folder"
+  package = "netlify-plugin-cache"
   [plugins.inputs]
     paths = ["node_modules/.cache"]
 

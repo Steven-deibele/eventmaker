@@ -1,16 +1,16 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
   "/api/events/[id]/attendance/route": "app/api/events/[id]/attendance/route.js",
-  "/api/events/code/[code]/route": "app/api/events/code/[code]/route.js",
   "/api/events/[id]/join/route": "app/api/events/[id]/join/route.js",
+  "/api/events/code/[code]/route": "app/api/events/code/[code]/route.js",
   "/api/events/route": "app/api/events/route.js",
   "/api/system/init/route": "app/api/system/init/route.js",
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
   "/auth/signin/page": "app/auth/signin/page.js",
-  "/dashboard/page": "app/dashboard/page.js",
   "/auth/verify-request/page": "app/auth/verify-request/page.js",
   "/events/code/[code]/page": "app/events/code/[code]/page.js",
   "/events/create/page": "app/events/create/page.js",
   "/events/join/page": "app/events/join/page.js",
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/dashboard/page": "app/dashboard/page.js"
 }
