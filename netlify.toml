@@ -13,7 +13,7 @@
 
 # Force Netlify to not use cached node_modules for Prisma
 [[plugins]]
-  package = "@netlify/plugin-cache"
+  package = "netlify-plugin-cache-folder"
   [plugins.inputs]
     paths = ["node_modules/.cache"]
 

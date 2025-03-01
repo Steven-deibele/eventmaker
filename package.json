@@ -37,6 +37,8 @@
     "zod": "^3.24.2"
   },
   "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.9.4",
+    "netlify-plugin-cache-folder": "^0.0.8",
     "netlify-plugin-inline-functions-env": "^1.0.9"
   }
 }
