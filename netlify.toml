@@ -1,9 +1,12 @@
 [build]
   command = "npm run netlify-build"
   publish = ".next"
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':(exclude)package-lock.json'"
 
 [build.environment]
   NETLIFY_NEXT_PLUGIN_SKIP = "true"
+  NODE_VERSION = "20"
+  NPM_VERSION = "10"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
@@ -12,4 +15,10 @@
 [[plugins]]
   package = "@netlify/plugin-cache"
   [plugins.inputs]
-    paths = ["node_modules/.cache"] 
+    paths = ["node_modules/.cache"]
+
+# Ensure Prisma generates the client during build
+[[plugins]]
+  package = "netlify-plugin-inline-functions-env"
+  [plugins.inputs]
+    buildEvent = "onBuild" 

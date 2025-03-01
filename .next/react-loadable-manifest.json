@@ -2,7 +2,7 @@
   "app\\components\\ClientAppInitializer.tsx -> ./AppInitializer": {
     "id": 6911,
     "files": [
-      "static/chunks/911.f2ad4cdc1819f498.js"
+      "static/chunks/911.8d78efa2a5035aa3.js"
     ]
   },
   "node_modules\\next\\dist\\client\\index.js -> ../pages/_app": {

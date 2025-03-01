@@ -1,16 +1,16 @@
 {
-  "/api/events/[id]/attendance/route": "/api/events/[id]/attendance",
-  "/_not-found/page": "/_not-found",
-  "/api/system/init/route": "/api/system/init",
-  "/api/events/code/[code]/route": "/api/events/code/[code]",
-  "/api/events/[id]/join/route": "/api/events/[id]/join",
   "/api/events/route": "/api/events",
+  "/_not-found/page": "/_not-found",
+  "/api/events/[id]/join/route": "/api/events/[id]/join",
+  "/api/events/[id]/attendance/route": "/api/events/[id]/attendance",
+  "/api/events/code/[code]/route": "/api/events/code/[code]",
+  "/api/system/init/route": "/api/system/init",
   "/api/auth/[...nextauth]/route": "/api/auth/[...nextauth]",
-  "/dashboard/page": "/dashboard",
   "/auth/signin/page": "/auth/signin",
+  "/dashboard/page": "/dashboard",
   "/auth/verify-request/page": "/auth/verify-request",
-  "/events/code/[code]/page": "/events/code/[code]",
   "/events/join/page": "/events/join",
-  "/page": "/",
-  "/events/create/page": "/events/create"
+  "/events/create/page": "/events/create",
+  "/events/code/[code]/page": "/events/code/[code]",
+  "/page": "/"
 }
