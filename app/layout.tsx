@@ -3,12 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import { AppProviders } from './providers';
 import React from 'react';
-import dynamic from 'next/dynamic';
-
-// Dynamically import AppInitializer to ensure it runs on the client
-const AppInitializer = dynamic(() => import('./components/AppInitializer'), {
-  ssr: false,
-});
+import ClientAppInitializer from './components/ClientAppInitializer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -27,9 +22,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <AppProviders>
-          <AppInitializer>
+          <ClientAppInitializer>
             {children}
-          </AppInitializer>
+          </ClientAppInitializer>
         </AppProviders>
       </body>
     </html>
