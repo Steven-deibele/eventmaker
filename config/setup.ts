@@ -3,11 +3,8 @@
  * This file handles initial setup and configuration when the application is first loaded
  */
 
-import { PrismaClient } from '@prisma/client';
+import { prisma } from '@/lib/prisma';
 import { type Session } from 'next-auth';
-
-// Initialize Prisma client
-const prisma = new PrismaClient();
 
 // Environment configuration with defaults
 export const config = {

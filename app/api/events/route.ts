@@ -1,10 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { auth } from '@/app/auth';
-import { PrismaClient } from '@prisma/client';
+import { prisma } from '@/lib/prisma';
 import { z } from 'zod';
 import crypto from 'crypto';
-
-const prisma = new PrismaClient();
 
 // Event validation schema
 const eventSchema = z.object({

@@ -4,11 +4,8 @@
  * It runs necessary setup tasks and ensures required services are available
  */
 
-import { PrismaClient } from '@prisma/client';
+import { prisma } from '@/lib/prisma';
 import { initializeApp, config } from './setup';
-
-// Database client for initialization tasks
-const prisma = new PrismaClient();
 
 /**
  * Performs initial database checks and setups
